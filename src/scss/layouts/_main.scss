@@ -1,0 +1,64 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.content_projects {
+  width: 90%;
+  margin: 2rem auto 0 auto;
+  .projects {
+    margin-top: 1rem;
+
+    .project {
+      margin-top: 1rem;
+      .date_project {
+        margin-top: 1rem;
+      }
+      .project_description {
+        margin-top: 1rem;
+        p {
+          line-height: 25px;
+        }
+      }
+    }
+  }
+  .content_see-all {
+    margin-top: 2rem;
+    button {
+      width: 100%;
+      background-color: v.$gris;
+      border: none;
+      padding: 10px 0;
+      font-weight: 600;
+      transition: 0.99s ease;
+      border-radius: 5px;
+      &:hover {
+        box-shadow: 0 0 3px 1px v.$negro;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+//Versión responsive
+@include m.tablet {
+  .content_projects {
+    width: 80%;
+  }
+}
+
+@include m.desktop {
+  .content_projects {
+    width: 70%;
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 10px;
+        .project{
+            .project_description{
+                p{
+                    width: 80%;
+                }
+            }
+        }
+    }
+  }
+}

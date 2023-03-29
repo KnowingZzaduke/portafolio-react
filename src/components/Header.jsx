@@ -66,7 +66,7 @@ export function Header() {
         </p>
       </div>
       <div className="content_description">
-        <h2>Sobre mi</h2>
+        <h1>Sobre mi</h1>
         <p>
           Saludos👋 estimados, mi nombre es Jose Luis Arteta Buelvas, soy un
           desarrollador Junior Front-end autodidacta utilizando las tecnologías
