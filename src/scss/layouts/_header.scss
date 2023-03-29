@@ -1,7 +1,44 @@
-@use '../base/variables' as v;
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
 
-.content_header{
-    p{
-        display: flex;
+.content_header {
+  margin-top: 2rem;
+  width: 90%;
+  margin: 2rem auto 0 auto;
+  .content_data {
+    margin-top: 1rem;
+    p {
+      display: flex;
+      column-gap: 10px;
+      justify-content: center;
+      font-weight: 600;
+      .content_data-user {
+        display: none;
+      }
     }
+  }
+  .content_description {
+    margin-top: 2rem;
+    line-height: 30px;
+  }
+}
+
+//Versión responsive
+@include m.tablet {
+  .content_header {
+    width: 80%;
+  }
+}
+@include m.desktop {
+  .content_header {
+    width: 70%;
+    .content_data {
+      p {
+        .content_data-user {
+          display: flex;
+          column-gap: 10px;
+        }
+      }
+    }
+  }
 }
