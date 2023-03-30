@@ -1,5 +1,5 @@
 import { Navbar } from "./components/Navbar";
-import { Header } from "./components/Header";
+import { Data } from "./components/Data";
 import { Outlet } from "react-router-dom";
 import { Footer } from "./components/Footer";
 import { useEffect, useState, CSSProperties } from "react";
@@ -8,17 +8,17 @@ import { RingLoader } from "react-spinners";
 export function App() {
   const navigate = useNavigate();
   const [loading, setLoading] = useState(true);
-  const [ruta, setRuta] = useState(true)
+  const [ruta, setRuta] = useState(true);
   useEffect(() => {
     setLoading(true);
     setLoading(false);
   }, []);
-  
+
   useEffect(() => {
-    if(ruta === true){
-      navigate("/informacion")
-      setRuta(false)
-    }else{
+    if (ruta === true) {
+      navigate("/informacion");
+      setRuta(false);
+    } else {
       navigate("/proyectos");
     }
   }, []);
@@ -45,7 +45,7 @@ export function App() {
       ) : (
         <div className="content_components">
           <Navbar />
-          <Header />
+          <Data />
           <Outlet />
           <Footer />
         </div>

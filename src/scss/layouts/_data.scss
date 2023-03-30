@@ -1,0 +1,38 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.content_data {
+  margin: 2rem auto 0 auto;
+  width: 90%;
+  span {
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+    font-weight: 600;
+    .content_data-user {
+      display: none;
+    }
+  }
+}
+
+//Versión responsive
+@include m.tablet {
+  .content_data {
+    width: 80%;
+    span{
+      .content_data-user {
+        display: flex;
+        column-gap: 10px;
+      }
+    }
+  }
+}
+
+@include m.desktop {
+  .content_data {
+    width: 70%;
+    .content_data-user {
+      display: block;
+    }
+  }
+}
