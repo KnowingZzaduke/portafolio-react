@@ -15,13 +15,23 @@ body {
 body {
   font-family: "Roboto", sans-serif;
   background-color: v.$grisClaro;
+  color: v.$grisOscuro;
 }
 
 #root {
   height: 100%;
 }
 
+h1,
+h2,
+h3 {
+  color: v.$negro;
+}
 ul,
 li {
   list-style: none;
+}
+
+.content_all-page{
+  width: 100%;
 }

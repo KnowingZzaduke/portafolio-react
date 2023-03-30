@@ -51,7 +51,7 @@ export function Header() {
   return (
     <div className="content_header">
       <div className="content_data">
-        <p>
+        <span>
           <span>{time.toLocaleTimeString()}</span>
           <span>𝆺</span>
           <span>Colombia</span>
@@ -63,7 +63,7 @@ export function Header() {
             <span>-</span>
             <span>{location.city}</span>
           </div>
-        </p>
+        </span>
       </div>
       <div className="content_description">
         <h1>Sobre mi</h1>

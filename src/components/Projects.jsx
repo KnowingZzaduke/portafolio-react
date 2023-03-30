@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export function Projects() {
   return (
     <div className="content_projects">
@@ -63,7 +64,9 @@ export function Projects() {
         </div>
       </div>
       <div className="content_see-all">
-        <button>Mostrar todos los proyectos</button>
+        <Link to="/proyectos">
+          <button>Mostrar todos los proyectos</button>
+        </Link>
       </div>
     </div>
   );

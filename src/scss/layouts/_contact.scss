@@ -1,0 +1,81 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.content_contact {
+  width: 90%;
+  margin: 2rem auto 0 auto;
+  .content_all-contact {
+    .contact {
+      background-color: v.$negro;
+      width: 300px;
+      height: 100px;
+      margin: 2rem auto 0 auto;
+      border-radius: 10px;
+      transition: 0.25s ease;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 10px;
+      box-shadow: 0 0 5px 1px v.$amarillo;
+
+      &:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 20px 1px v.$amarillo;
+      }
+      .content_icon {
+        text-align: center;
+        img {
+          width: 30px;
+          filter: invert(100);
+        }
+      }
+      .content_info {
+        h3,
+        p {
+          color: v.$blanco;
+        }
+      }
+    }
+  }
+}
+
+//Versión responsive
+@include m.tablet {
+  .content_contact {
+    width: 80%;
+    .content_all-contact {
+      .contact {
+        width: 330px;
+        height: 120px;
+      }
+    }
+  }
+}
+
+@include m.desktop {
+  .content_contact {
+    width: 70%;
+    .content_all-contact {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 30px;
+      .contact {
+        width: 280px;
+        height: 100px;
+      }
+    }
+  }
+}
+
+@include m.desktopXl {
+    .content_contact {
+      width: 70%;
+      .content_all-contact {
+        .contact {
+          width: 330px;
+          height: 120px;
+        }
+      }
+    }
+  }
+  

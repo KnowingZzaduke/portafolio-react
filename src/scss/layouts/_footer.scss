@@ -1,0 +1,11 @@
+@use '../base/variables' as v;
+
+.content_footer{
+    margin-top: 4rem;
+    background-color: v.$negro;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: v.$blanco;
+}
