@@ -4,7 +4,6 @@ import { FaDna } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaFileAlt } from "react-icons/fa";
-import { FaMoon } from "react-icons/fa";
 import { Link } from "react-router-dom";
 export function Navbar() {
   return (
@@ -17,33 +16,28 @@ export function Navbar() {
           <div className="content_enlaces">
             <ul>
               <li>
-                <Link title="Home">
+                <Link to="/informacion" title="Home">
                   <FaHouseDamage />
                 </Link>
               </li>
               <li>
-                <Link title="Proyects">
+                <Link to="/proyectos" title="Proyects">
                   <FaDna />
                 </Link>
               </li>
               <li>
-                <Link title="GitHub">
+                <Link to="https://github.com/KnowingZzaduke" title="GitHub" target="_blank">
                   <FaGithub />
                 </Link>
               </li>
               <li>
-                <Link title="Linkedin">
+                <Link to ="https://www.linkedin.com/in/josex-developer/" title="Linkedin" target="_blank">
                   <FaLinkedinIn />
                 </Link>
               </li>
               <li>
-                <Link title="Curriculum">
+                <Link to="/files/Curriculum.pdf" title="Curriculum" target="_blank">
                   <FaFileAlt />
-                </Link>
-              </li>
-              <li>
-                <Link title="Night">
-                  <FaMoon />
                 </Link>
               </li>
             </ul>

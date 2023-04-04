@@ -1,4 +1,3 @@
-
 export function Header() {
   return (
     <div className="content_header">
@@ -6,11 +5,11 @@ export function Header() {
         <h1>Sobre mi</h1>
         <p>
           Saludos👋 estimados, mi nombre es Jose Luis Arteta Buelvas, soy un
-          desarrollador Junior Front-end autodidacta utilizando las tecnologías
-          Html, Css, Sass, JavaScript, React, Github y la herramienta de diseño
-          Figma. Me apasiona mucho aprender cosas nuevas cada día que aporten
-          gran valor a mi vida y al mundo. Me interesa todo lo relacionado con
-          la tecnología y la programación.
+          desarrollador Junior Front-end autodidacta. Manejo tecnologías como{" "}
+          <b>HTML</b>, <b>CSS</b>, <b>SASS</b>, <b>JAVASCRIPT</b>, <b>REACT</b>,{" "}
+          <b>GIT</b>, <b>GITHUB</b> y la herramienta de diseño <b>FIGMA</b>. <br/>
+          Sigo en constante aprendizaje con el objetivo de mostrar los mejores
+          estándares de calidad requeridos en el campo.
         </p>
       </div>
     </div>

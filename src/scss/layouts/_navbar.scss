@@ -3,6 +3,11 @@
 
 .content_navbar {
   background-color: v.$negro;
+  position: fixed;
+  width: 100%;
+  top: 0%;
+  box-shadow: 0 0 5px 1px v.$amarillo;
+  z-index: 3;
   .navbar {
     padding: 1rem 0;
     display: grid;

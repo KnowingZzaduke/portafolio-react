@@ -3,6 +3,7 @@ import Swal from "sweetalert2";
 export function Data() {
   const [time, setTime] = useState(new Date());
   const [location, setLocation] = useState({});
+  const [guardado, setGuardado] = useState();
   useEffect(() => {
     const timer = setInterval(() => {
       setTime(new Date());
@@ -10,38 +11,44 @@ export function Data() {
   }, []);
 
   useEffect(() => {
-    const getLocation = async () => {
+    const checkLocationPermission = async () => {
       const { state } = await navigator.permissions.query({
         name: "geolocation",
       });
-      if (state === "denied") {
+
+      if (state === "granted") {
+        setGuardado(localStorage.setItem("permisoUbicacion", "concedido"));
+      } else if (state === "denied") {
+        localStorage.setItem("permisoUbicacion", "denegado");
+      }
+    };
+
+    checkLocationPermission();
+  }, []);
+
+  useEffect(() => {
+    const getLocation = async () => {
+      if (localStorage.getItem("permisoUbicacion") === "concedido") {
+        try {
+          const position = await new Promise((resolve, reject) => {
+            navigator.geolocation.getCurrentPosition(resolve, reject);
+          });
+
+          const { latitude, longitude } = position.coords;
+          const response = await fetch(
+            `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=es`
+          );
+          const data = await response.json();
+          setLocation(data);
+        } catch (error) {
+          console.error(error);
+        }
+      } else if (localStorage.getItem("permisoUbicacionn") === "denegado") {
         Swal.fire({
-          title: "Denegado",
-          text: "Se ha denegado el acceso a tu ubicación 😕",
+          title: "Alerta",
+          text: "Permiso denegado",
           icon: "warning",
         });
-      } else {
-        if (navigator.geolocation) {
-          try {
-            const position = await new Promise((resolve, reject) => {
-              navigator.geolocation.getCurrentPosition(resolve, reject);
-            });
-            const { latitude, longitude } = position.coords;
-            const response = await fetch(
-              `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=es`
-            );
-            const data = await response.json();
-            setLocation(data);
-          } catch (error) {
-            console.error(error);
-          }
-        } else {
-          Swal.fire({
-            title: "Error",
-            text: "Geolocation no es soportado por tu navegador",
-            icon: "error",
-          });
-        }
       }
     };
 

@@ -1,0 +1,22 @@
+@use '../base/variables' as v;
+
+#error_page{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .content_error-page{
+        background-color: v.$rojoDanger;
+        width: 40%;
+        border-radius: 5px;
+        padding-bottom: 1rem;
+        h1{
+            font-size: 50px;
+            text-align: center;
+        }
+        p{
+            color:v.$blanco;
+            text-align: center;
+        }
+    }
+}
