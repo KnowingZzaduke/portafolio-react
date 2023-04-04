@@ -294,7 +294,7 @@ export function AllProjects() {
           <h3>Links</h3>
           <div className="links">
             <Link>
-              <FaPaperPlane title="Página web" />
+              <FaPaperPlane to="https://taks-list-react.vercel.app/" title="Página web" />
             </Link>
             <Link
               to="https://github.com/KnowingZzaduke/Taks-list-react"
