@@ -3,7 +3,6 @@ import Swal from "sweetalert2";
 export function Data() {
   const [time, setTime] = useState(new Date());
   const [location, setLocation] = useState({});
-  const [guardado, setGuardado] = useState();
   useEffect(() => {
     const timer = setInterval(() => {
       setTime(new Date());
@@ -11,24 +10,8 @@ export function Data() {
   }, []);
 
   useEffect(() => {
-    const checkLocationPermission = async () => {
-      const { state } = await navigator.permissions.query({
-        name: "geolocation",
-      });
-
-      if (state === "granted") {
-        setGuardado(localStorage.setItem("permisoUbicacion", "concedido"));
-      } else if (state === "denied") {
-        localStorage.setItem("permisoUbicacion", "denegado");
-      }
-    };
-
-    checkLocationPermission();
-  }, []);
-
-  useEffect(() => {
     const getLocation = async () => {
-      if (localStorage.getItem("permisoUbicacion") === "concedido") {
+      if (navigator.geolocation) {
         try {
           const position = await new Promise((resolve, reject) => {
             navigator.geolocation.getCurrentPosition(resolve, reject);
@@ -36,7 +19,8 @@ export function Data() {
 
           const { latitude, longitude } = position.coords;
           const response = await fetch(
-            `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=es`);
+            `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=es`
+          );
           const data = await response.json();
           setLocation(data);
         } catch (error) {
