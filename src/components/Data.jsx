@@ -36,8 +36,7 @@ export function Data() {
 
           const { latitude, longitude } = position.coords;
           const response = await fetch(
-            `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=es`
-          );
+            `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=es`);
           const data = await response.json();
           setLocation(data);
         } catch (error) {
