@@ -83,7 +83,7 @@ export function AllProjects() {
         <div className="content_links">
           <h3>Links</h3>
           <div className="links">
-            <Link to="https://app.dysam.com.co/" target="_blank">
+            <Link>
               <FaPaperPlane title="Página web" />
             </Link>
             <Link
