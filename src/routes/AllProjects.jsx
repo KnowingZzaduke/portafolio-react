@@ -121,10 +121,11 @@ export function AllProjects() {
             <span>Marzo 22, 2023</span>
             <h3>Dysam reportes</h3>
             <p>
-              Una aplicación que cuenta con dos módulos, administrador y
-              usuario. El módulo de administrador permite la subida de reportes
-              en formato pdf con datos específicos y el módulo de usuarios
-              permite la consulta de estos mediante un código generado.
+              Aplicación con dos módulos, administrador y usuario. El de
+              administrador permite la subida de archivos “pdf” y enlazarlo con
+              un código generado el cual es enviado al correo de los usuarios.
+              El módulo de usuarios permite la consulta de esos archivos
+              mediante el código generado.
             </p>
             <div
               className={`content_info-project-n ${
@@ -294,9 +295,7 @@ export function AllProjects() {
           <h3>Links</h3>
           <div className="links">
             <Link to="https://taks-list-react.vercel.app/">
-              <FaPaperPlane
-                title="Página web"
-              />
+              <FaPaperPlane title="Página web" />
             </Link>
             <Link
               to="https://github.com/KnowingZzaduke/Taks-list-react"
@@ -316,7 +315,7 @@ export function AllProjects() {
             <p>
               Página web con las funcionalidades básicas de un carrito de
               compra. Permite agregar diferentes productos, a su vez suma la
-              cantidad de estos y el precio total.
+              cantidad de estos y determina cuanto es el precio total.
             </p>
             <div
               className={`content_info-project-n ${

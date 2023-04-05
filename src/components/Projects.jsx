@@ -14,8 +14,8 @@ export function Projects() {
             <h3>Portafolio</h3>
             <p>
               Página web personal enfocada a mostrar los proyectos desarrollados
-              por mi persona con el objetivo de mostrar mis conocimientos y
-              habilidades como desarrollador a través de proyectos.
+              por mi persona con el objetivo de dar a canocer mis conocimientos
+              y habilidades como desarrollador front-end.
             </p>
           </div>
         </div>
@@ -26,10 +26,11 @@ export function Projects() {
           <div className="project_description">
             <h3>Reportes Dysam</h3>
             <p>
-              Una aplicación que cuenta con dos módulos, administrador y
-              usuario. El módulo de administrador permite la subida de reportes
-              en formato pdf con datos específicos y el módulo de usuarios
-              permite la consulta de estos mediante un código generado.
+              Aplicación con dos módulos, administrador y usuario. El de
+              administrador permite la subida de archivos “pdf” y enlazarlo con
+              un código generado el cual es enviado al correo de los usuarios.
+              El módulo de usuarios permite la consulta de esos archivos
+              mediante el código generado.
             </p>
           </div>
         </div>
@@ -53,7 +54,8 @@ export function Projects() {
           <div className="project_description">
             <h3>Whatssive</h3>
             <p>
-              Una API de Whatsapp que permite el envío masivo de mensajes a contactos, grupos o comunidades dentro de WhatsApp.
+              Una API de Whatsapp que permite el envío masivo de mensajes a
+              contactos, grupos o comunidades dentro de WhatsApp.
             </p>
           </div>
         </div>

@@ -28,9 +28,8 @@
         h3,
         p {
           padding-left: 1rem;
-        }
-        p {
           margin-bottom: 1rem;
+          line-height: 25px;
         }
 
         .content_info-project-n {
@@ -201,14 +200,14 @@
   }
 }
 
-@include m.desktopXl{
-  .content_all-projects{
-    .content_info{
-      a{
-        .proyecto{
-          .content_info-project-n{
-            .info_left{
-              .video_whatssive-n{
+@include m.desktopXl {
+  .content_all-projects {
+    .content_info {
+      a {
+        .proyecto {
+          .content_info-project-n {
+            .info_left {
+              .video_whatssive-n {
                 width: 300px;
               }
             }
