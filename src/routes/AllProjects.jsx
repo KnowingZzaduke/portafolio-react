@@ -12,42 +12,7 @@ import { FaPaperPlane, FaGithub } from "react-icons/fa";
 import Dysam from "/img/Dysam.jpg";
 import { useState } from "react";
 export function AllProjects() {
-  const [portafolio, setPortafolio] = useState(false);
-  const [dysam, setDysam] = useState(false);
-  const [whatssive, setWhatssive] = useState(false);
-  const [taks, setTaks] = useState(false);
-  const [carrito, setCarrito] = useState(false);
-  const [reloj, setReloj] = useState(false);
-  const [calculadora, setCalculadora] = useState(false);
-  const [contador, setContador] = useState(false);
-  const [luis, setLuis] = useState(false);
-  function handlePortafolio() {
-    setPortafolio(!portafolio);
-  }
-  function handleDysam() {
-    setDysam(!dysam);
-  }
-  function handleWhatssive() {
-    setWhatssive(!whatssive);
-  }
-  function handleTaks() {
-    setTaks(!taks);
-  }
-  function handleCarrito() {
-    setCarrito(!carrito);
-  }
-  function handleReloj() {
-    setReloj(!reloj);
-  }
-  function handleCalculadora() {
-    setCalculadora(!calculadora);
-  }
-  function handleContador() {
-    setContador(!contador);
-  }
-  function handleLuis() {
-    setLuis(!luis);
-  }
+  
 
   return (
     <div className="content_all-projects">
