@@ -59,8 +59,8 @@ export function AllProjects() {
             <h3>Portafolio</h3>
             <p>
               Página web personal enfocada a mostrar los proyectos desarrollados
-              por mi persona con el objetivo de mostrar mis conocimientos y
-              habilidades como desarrollador a través de proyectos.
+              por mi persona con el objetivo de dar a canocer mis conocimientos
+              y habilidades como desarrollador front-end.
             </p>
             <div
               className={`content_info-project-n ${
