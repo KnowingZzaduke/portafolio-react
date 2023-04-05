@@ -24,7 +24,7 @@ export function AllProjects() {
     luis: false,
   });
 
-  function handleToggle() {
+  function handleToggle(name) {
     setState((prevState) => ({ ...prevState, [name]: !prevState[name] }));
   }
 
@@ -598,7 +598,7 @@ export function AllProjects() {
                   </div>
                   <div>
                     <h4>Observaciones</h4>
-                    <p>en desarrollo</p>
+                    <p>En desarrollo</p>
                   </div>
                 </div>
               </div>
