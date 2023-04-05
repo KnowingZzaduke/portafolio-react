@@ -12,13 +12,27 @@ import { FaPaperPlane, FaGithub } from "react-icons/fa";
 import Dysam from "/img/Dysam.jpg";
 import { useState } from "react";
 export function AllProjects() {
-  
+  const [state, setState] = useState({
+    portafolio: false,
+    dysam: false,
+    whatssive: false,
+    taks: false,
+    carrito: false,
+    reloj: false,
+    calculadora: false,
+    contador: false,
+    luis: false,
+  });
+
+  function handleToggle() {
+    setState((prevState) => ({ ...prevState, [name]: !prevState[name] }));
+  }
 
   return (
     <div className="content_all-projects">
       <h2>Proyectos</h2>
       <div className="content_info">
-        <Link onClick={handlePortafolio}>
+        <Link onClick={() => handleToggle("portafolio")}>
           <div className="proyecto">
             <span>Marzo 30, 2023</span>
             <h3>Portafolio</h3>
@@ -29,7 +43,7 @@ export function AllProjects() {
             </p>
             <div
               className={`content_info-project-n ${
-                portafolio ? "content_info-project-d" : ""
+                state.portafolio ? "content_info-project-d" : ""
               }`}
             >
               <div className="info_left">
@@ -39,12 +53,14 @@ export function AllProjects() {
                   loop
                   muted
                   className={`video_whatssive-n ${
-                    portafolio ? "video_whatssive-d" : ""
+                    state.portafolio ? "video_whatssive-d" : ""
                   }`}
                 />
               </div>
               <div
-                className={`info_right-n ${portafolio ? "info_right-d" : ""}`}
+                className={`info_right-n ${
+                  state.portafolio ? "info_right-d" : ""
+                }`}
               >
                 <div className="date_info">
                   <span>Marzo 22, 2023</span>
@@ -81,7 +97,7 @@ export function AllProjects() {
       </div>
       <hr />
       <div className="content_info">
-        <Link onClick={handleDysam}>
+        <Link onClick={() => handleToggle("dysam")}>
           <div className="proyecto">
             <span>Marzo 22, 2023</span>
             <h3>Dysam reportes</h3>
@@ -94,19 +110,21 @@ export function AllProjects() {
             </p>
             <div
               className={`content_info-project-n ${
-                dysam ? "content_info-project-d" : ""
+                state.dysam ? "content_info-project-d" : ""
               }`}
             >
               <div className="info_left">
                 <img
                   src={Dysam}
                   className={`video_whatssive-n ${
-                    dysam ? "video_whatssive-d" : ""
+                    state.dysam ? "video_whatssive-d" : ""
                   }`}
                   style={{ height: "300px" }}
                 />
               </div>
-              <div className={`info_right-n ${dysam ? "info_right-d" : ""}`}>
+              <div
+                className={`info_right-n ${state.dysam ? "info_right-d" : ""}`}
+              >
                 <div className="date_info">
                   <span>Marzo 22, 2023</span>
                   <h3>Reportes Dysam</h3>
@@ -146,7 +164,7 @@ export function AllProjects() {
       </div>
       <hr />
       <div className="content_info">
-        <Link onClick={handleWhatssive}>
+        <Link onClick={() => handleToggle("whatssive")}>
           <div className="proyecto">
             <span>Marzo 3, 2023</span>
             <h3>Whatssive</h3>
@@ -156,7 +174,7 @@ export function AllProjects() {
             </p>
             <div
               className={`content_info-project-n ${
-                whatssive ? "content_info-project-d" : ""
+                state.whatssive ? "content_info-project-d" : ""
               }`}
             >
               <div className="info_left">
@@ -166,12 +184,14 @@ export function AllProjects() {
                   loop
                   muted
                   className={`video_whatssive-n ${
-                    whatssive ? "video_whatssive-d" : ""
+                    state.whatssive ? "video_whatssive-d" : ""
                   }`}
                 />
               </div>
               <div
-                className={`info_right-n ${whatssive ? "info_right-d" : ""}`}
+                className={`info_right-n ${
+                  state.whatssive ? "info_right-d" : ""
+                }`}
               >
                 <div className="date_info">
                   <span>Marzo 3, 2023</span>
@@ -212,7 +232,7 @@ export function AllProjects() {
       </div>
       <hr />
       <div className="content_info">
-        <Link onClick={handleTaks}>
+        <Link onClick={() => handleToggle("taks")}>
           <div className="proyecto">
             <span>Febrero 26, 2023</span>
             <h3>Taks list</h3>
@@ -223,7 +243,7 @@ export function AllProjects() {
             </p>
             <div
               className={`content_info-project-n ${
-                taks ? "content_info-project-d" : ""
+                state.taks ? "content_info-project-d" : ""
               }`}
             >
               <div className="info_left">
@@ -233,11 +253,13 @@ export function AllProjects() {
                   loop
                   muted
                   className={`video_whatssive-n ${
-                    taks ? "video_whatssive-d" : ""
+                    state.taks ? "video_whatssive-d" : ""
                   }`}
                 />
               </div>
-              <div className={`info_right-n ${taks ? "info_right-d" : ""}`}>
+              <div
+                className={`info_right-n ${state.taks ? "info_right-d" : ""}`}
+              >
                 <div className="date_info">
                   <span>Febrero 26, 2023</span>
                   <h3>Taks List</h3>
@@ -273,7 +295,7 @@ export function AllProjects() {
       </div>
       <hr />
       <div className="content_info">
-        <Link onClick={handleCarrito}>
+        <Link onClick={() => handleToggle("carrito")}>
           <div className="proyecto">
             <span>Febrero 16, 2023</span>
             <h3>Carrito de compras</h3>
@@ -284,7 +306,7 @@ export function AllProjects() {
             </p>
             <div
               className={`content_info-project-n ${
-                carrito ? "content_info-project-d" : ""
+                state.carrito ? "content_info-project-d" : ""
               }`}
             >
               <div className="info_left">
@@ -294,11 +316,15 @@ export function AllProjects() {
                   loop
                   muted
                   className={`video_whatssive-n ${
-                    carrito ? "video_whatssive-d" : ""
+                    state.carrito ? "video_whatssive-d" : ""
                   }`}
                 />
               </div>
-              <div className={`info_right-n ${carrito ? "info_right-d" : ""}`}>
+              <div
+                className={`info_right-n ${
+                  state.carrito ? "info_right-d" : ""
+                }`}
+              >
                 <div className="date_info">
                   <span>Febrero 16, 2023</span>
                   <h3>Carrito de compras</h3>
@@ -337,14 +363,14 @@ export function AllProjects() {
       </div>
       <hr />
       <div className="content_info">
-        <Link onClick={handleReloj}>
+        <Link onClick={() => handleToggle("reloj")}>
           <div className="proyecto">
             <span>Enero 13, 2023</span>
             <h3>Reloj</h3>
             <p>Un pequeño reloj digital con su respectivas funcionalidades.</p>
             <div
               className={`content_info-project-n ${
-                reloj ? "content_info-project-d" : ""
+                state.reloj ? "content_info-project-d" : ""
               }`}
             >
               <div className="info_left">
@@ -354,11 +380,13 @@ export function AllProjects() {
                   loop
                   muted
                   className={`video_whatssive-n ${
-                    reloj ? "video_whatssive-d" : ""
+                    state.reloj ? "video_whatssive-d" : ""
                   }`}
                 />
               </div>
-              <div className={`info_right-n ${reloj ? "info_right-d" : ""}`}>
+              <div
+                className={`info_right-n ${state.reloj ? "info_right-d" : ""}`}
+              >
                 <div className="date_info">
                   <span>Enero 13, 2023</span>
                   <h3>Reloj</h3>
@@ -397,14 +425,14 @@ export function AllProjects() {
       </div>
       <hr />
       <div className="content_info">
-        <Link onClick={handleCalculadora}>
+        <Link onClick={() => handleToggle("calculadora")}>
           <div className="proyecto">
             <span>Enero 16, 2023</span>
             <h3>Calculadora</h3>
             <p>Calculadora funcional con sus operaciones básicas.</p>
             <div
               className={`content_info-project-n ${
-                calculadora ? "content_info-project-d" : ""
+                state.calculadora ? "content_info-project-d" : ""
               }`}
             >
               <div className="info_left">
@@ -414,12 +442,14 @@ export function AllProjects() {
                   loop
                   muted
                   className={`video_whatssive-n ${
-                    calculadora ? "video_whatssive-d" : ""
+                    state.calculadora ? "video_whatssive-d" : ""
                   }`}
                 />
               </div>
               <div
-                className={`info_right-n ${calculadora ? "info_right-d" : ""}`}
+                className={`info_right-n ${
+                  state.calculadora ? "info_right-d" : ""
+                }`}
               >
                 <div className="date_info">
                   <span>Enero 16, 2023</span>
@@ -459,7 +489,7 @@ export function AllProjects() {
       </div>
       <hr />
       <div className="content_info">
-        <Link onClick={handleContador}>
+        <Link onClick={() => handleToggle("contador")}>
           <div className="proyecto">
             <span>Enero 6, 2023</span>
             <h3>Contador</h3>
@@ -469,7 +499,7 @@ export function AllProjects() {
             </p>
             <div
               className={`content_info-project-n ${
-                contador ? "content_info-project-d" : ""
+                state.contador ? "content_info-project-d" : ""
               }`}
             >
               <div className="info_left">
@@ -479,11 +509,15 @@ export function AllProjects() {
                   loop
                   muted
                   className={`video_whatssive-n ${
-                    contador ? "video_whatssive-d" : ""
+                    state.contador ? "video_whatssive-d" : ""
                   }`}
                 />
               </div>
-              <div className={`info_right-n ${contador ? "info_right-d" : ""}`}>
+              <div
+                className={`info_right-n ${
+                  state.contador ? "info_right-d" : ""
+                }`}
+              >
                 <div className="date_info">
                   <span>enero 6, 2023</span>
                   <h3>Contador</h3>
@@ -522,7 +556,7 @@ export function AllProjects() {
       </div>
       <hr />
       <div className="content_info">
-        <Link onClick={handleLuis}>
+        <Link onClick={() => handleToggle("luis")}>
           <div className="proyecto">
             <span>Diciembre 10, 2022</span>
             <h3>Luis Buelvas Coach</h3>
@@ -532,7 +566,7 @@ export function AllProjects() {
             </p>
             <div
               className={`content_info-project-n ${
-                luis ? "content_info-project-d" : ""
+                state.luis ? "content_info-project-d" : ""
               }`}
             >
               <div className="info_left">
@@ -542,11 +576,13 @@ export function AllProjects() {
                   loop
                   muted
                   className={`video_whatssive-n ${
-                    luis ? "video_whatssive-d" : ""
+                    state.luis ? "video_whatssive-d" : ""
                   }`}
                 />
               </div>
-              <div className={`info_right-n ${luis ? "info_right-d" : ""}`}>
+              <div
+                className={`info_right-n ${state.luis ? "info_right-d" : ""}`}
+              >
                 <div className="date_info">
                   <span>Diciembre 10, 2022</span>
                   <h3>Luis Buelvas Coach</h3>
