@@ -3,10 +3,18 @@
 
 .content_header {
   width: 90%;
-  margin: 2rem auto 0 auto;
+  margin: 3rem auto 0 auto;
   .content_description {
     margin-top: 2rem;
     line-height: 30px;
+    .info{
+      p{
+        font-weight: bold;
+      }
+    }
+    span{
+      display: none;
+    }
   }
 }
 

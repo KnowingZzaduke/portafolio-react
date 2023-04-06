@@ -32,6 +32,17 @@
           line-height: 25px;
         }
 
+        .detalles{
+          font-size: 11px;
+          text-decoration: underline;
+          opacity: 100%;
+          transition: .99s ease-in-out;
+        }
+
+        .detalles_n{
+          opacity: 0%;
+        }
+
         .content_info-project-n {
           overflow: hidden;
           height: 0px;

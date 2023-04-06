@@ -41,6 +41,9 @@ export function AllProjects() {
               por mi persona con el objetivo de dar a canocer mis conocimientos
               y habilidades como desarrollador front-end.
             </p>
+            <p className={`detalles ${state.portafolio ? "detalles_n" : " "}`}>
+              <i>Da click para ver más detalles</i>
+            </p>
             <div
               className={`content_info-project-n ${
                 state.portafolio ? "content_info-project-d" : ""
@@ -108,6 +111,9 @@ export function AllProjects() {
               El módulo de usuarios permite la consulta de esos archivos
               mediante el código generado.
             </p>
+            <p className={`detalles ${state.dysam ? "detalles_n" : " "}`}>
+              <i>Da click para ver más detalles</i>
+            </p>
             <div
               className={`content_info-project-n ${
                 state.dysam ? "content_info-project-d" : ""
@@ -171,6 +177,9 @@ export function AllProjects() {
             <p>
               Una API de Whatsapp que permite el envío masivo de mensajes a
               contactos, grupos o comunidades dentro de WhatsApp.
+            </p>
+            <p className={`detalles ${state.whatssive ? "detalles_n" : " "}`}>
+              <i>Da click para ver más detalles</i>
             </p>
             <div
               className={`content_info-project-n ${
@@ -241,6 +250,9 @@ export function AllProjects() {
               conocimientos básicos de react, permitiendo agregar y eliminar
               tareas en una lista.
             </p>
+            <p className={`detalles ${state.taks ? "detalles_n" : " "}`}>
+              <i>Da click para ver más detalles</i>
+            </p>
             <div
               className={`content_info-project-n ${
                 state.taks ? "content_info-project-d" : ""
@@ -303,6 +315,9 @@ export function AllProjects() {
               Página web con las funcionalidades básicas de un carrito de
               compra. Permite agregar diferentes productos, a su vez suma la
               cantidad de estos y determina cuanto es el precio total.
+            </p>
+            <p className={`detalles ${state.carrito ? "detalles_n" : " "}`}>
+              <i>Da click para ver más detalles</i>
             </p>
             <div
               className={`content_info-project-n ${
@@ -368,6 +383,9 @@ export function AllProjects() {
             <span>Enero 13, 2023</span>
             <h3>Reloj</h3>
             <p>Un pequeño reloj digital con su respectivas funcionalidades.</p>
+            <p className={`detalles ${state.reloj ? "detalles_n" : " "}`}>
+              <i>Da click para ver más detalles</i>
+            </p>
             <div
               className={`content_info-project-n ${
                 state.reloj ? "content_info-project-d" : ""
@@ -430,6 +448,9 @@ export function AllProjects() {
             <span>Enero 16, 2023</span>
             <h3>Calculadora</h3>
             <p>Calculadora funcional con sus operaciones básicas.</p>
+            <p className={`detalles ${state.calculadora ? "detalles_n" : " "}`}>
+              <i>Da click para ver más detalles</i>
+            </p>
             <div
               className={`content_info-project-n ${
                 state.calculadora ? "content_info-project-d" : ""
@@ -497,6 +518,9 @@ export function AllProjects() {
               Pequeña aplicación de un contador digital con sus respectivas
               funcionalidades y sonidos.
             </p>
+            <p className={`detalles ${state.contador ? "detalles_n" : " "}`}>
+              <i>Da click para ver más detalles</i>
+            </p>
             <div
               className={`content_info-project-n ${
                 state.contador ? "content_info-project-d" : ""
@@ -563,6 +587,9 @@ export function AllProjects() {
             <p>
               Sitio web encofado a la venta de cursos de superación personal y
               de como alcanzar el exito.
+            </p>
+            <p className={`detalles ${state.luis ? "detalles_n" : " "}`}>
+              <i>Da click para ver más detalles</i>
             </p>
             <div
               className={`content_info-project-n ${
