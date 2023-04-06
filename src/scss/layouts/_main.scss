@@ -49,16 +49,16 @@
   .content_projects {
     width: 70%;
     .projects {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 10px;
-        .project{
-            .project_description{
-                p{
-                    width: 80%;
-                }
-            }
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 10px;
+      .project {
+        .project_description {
+          p {
+            width: 80%;
+          }
         }
+      }
     }
   }
 }

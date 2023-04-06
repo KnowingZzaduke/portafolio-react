@@ -1,37 +1,35 @@
-@use '../base/variables' as v;
-@use '../base/mixins' as m;
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
 
-.content_skills{
-    width: 90%;
-    margin: 2rem auto 0 auto;
-    .skills{
-        display: grid;
-        margin-top: 1rem;
-        .skill{
-            text-align: center;
-            margin-top: 2rem;
-            img{
-                width: 80px;
-            }
-        }
+.content_skills {
+  width: 90%;
+  margin: 2rem auto 0 auto;
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 1rem;
+    .skill {
+      text-align: center;
+      margin-top: 2rem;
+      img {
+        width: 80px;
+      }
     }
+  }
 }
 
 //Versión responsive
-@include m.tablet{
-    .content_skills{
-        width: 80%;
-        .skills{
-            grid-template-columns: repeat(2, 1fr);
-        }
-    }
+@include m.tablet {
+  .content_skills {
+    width: 80%;
+  }
 }
 
-@include m.desktop{
-    .content_skills{
-        width: 70%;
-        .skills{
-            grid-template-columns: repeat(5, 1fr);
-        }
+@include m.desktop {
+  .content_skills {
+    width: 70%;
+    .skills {
+      grid-template-columns: repeat(5, 1fr);
     }
+  }
 }
