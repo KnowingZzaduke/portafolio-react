@@ -247,7 +247,7 @@ export function AllProjects() {
             <h3>Taks list</h3>
             <p>
               Un pequeño proyecto en donde pongo en practica algunos de los
-              conocimientos básicos de react, permitiendo agregar y eliminar
+              conocimientos básicos de react, permitiendo agregar, editar y eliminar
               tareas en una lista.
             </p>
             <p className={`detalles ${state.taks ? "detalles_n" : " "}`}>
@@ -293,11 +293,11 @@ export function AllProjects() {
         <div className="content_links">
           <h3>Links</h3>
           <div className="links">
-            <Link to="https://taks-list-react.vercel.app/" target="_blank">
+            <Link to="https://taks-list-ashen.vercel.app/" target="_blank">
               <FaPaperPlane title="Página web" />
             </Link>
             <Link
-              to="https://github.com/KnowingZzaduke/Taks-list-react"
+              to="https://github.com/KnowingZzaduke/Taks-List"
               target="_blank"
             >
               <FaGithub title="Repositorio" />
