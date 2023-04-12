@@ -53,62 +53,70 @@
           display: flex;
           flex-direction: column;
           z-index: 1;
-          .info_left {
-            .video_whatssive-n {
-              width: 250px;
-              border-radius: 10px;
-              position: relative;
-              left: -40%;
-              top: 0;
-              right: 0;
-              bottom: 0;
-              transition: 0.99s ease-in-out;
-            }
-            .video_whatssive-d {
-              left: 0%;
-            }
-          }
-          .info_right-n {
+
+          .info_n {
             opacity: 0%;
             transition: 0.99s ease-in-out;
             margin-top: 1rem;
+            width: 100%;
+
+            h3, h4, p{
+              padding: 1rem 0;
+            }
             .date_info {
-              span {
-                margin: 0%;
-              }
               h3 {
-                padding: 0%;
-                margin-top: 1rem;
-              }
+                background-color: v.$amarilloClaro;
+                width: 90%;
+                margin: 0% auto;
+                border-radius: 5px 5px 0 0;
+              }              
             }
             .info {
-              h4 {
-                background-color: v.$amarillo;
-                margin: 1rem auto 0 auto;
-                border-radius: 5px;
+              .stack {
+                h4 {
+                  background-color: v.$amarillo;
+                  margin: 0% auto;
+                  width: 90%;
+                }
+                p {
+                  padding: 0%;
+                  margin: 0% auto;
+                  background-color: v.$amarilloClaro;
+                  width: 90%;
+                }
               }
-              p {
-                padding: 0%;
-                margin-top: 5px;
+              .plataform {
+                h4 {
+                  background-color: v.$amarillo;
+                  width: 90%;
+                  margin: 0% auto;
+                  border: 5px;
+                }
+                p {
+                  padding: 0%;
+                  background-color: v.$amarilloClaro;
+                  border-radius: 0 0 5px 5px;
+                  width: 90%;
+                  margin: 0% auto;
+                }
               }
-              .website {
-                z-index: 100;
-                a {
-                  &:hover {
-                    text-decoration: underline;
-                    cursor: pointer;
-                    color: v.$negro;
-                  }
+              .observations{
+                h4, p{
+                  width: 90%;
+                  margin: 0% auto;
+                }
+                p{
+                  background-color: v.$amarilloClaro;
                 }
               }
             }
           }
-          .info_right-d {
+          .info_d {
             opacity: 100%;
           }
         }
         .content_info-project-d {
-          height: 500px;
+          height: 320px;
         }
       }
     }
@@ -143,19 +151,6 @@
 @include m.tablet {
   .content_all-projects {
     width: 80%;
-    .content_info {
-      a {
-        .proyecto {
-          .content_info-project-n {
-            .info_left {
-              .video_whatssive-n {
-                width: 300px;
-              }
-            }
-          }
-        }
-      }
-    }
   }
 }
 
@@ -165,21 +160,9 @@
     .content_info {
       a {
         .proyecto {
-          .content_info-project-n {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            .info_left {
-              .video_whatssive-n {
-                width: 250px;
-              }
-            }
-            .info_right-n {
-              opacity: 0%;
-              transition: 0.99s ease-in-out;
+          .content_info-project-n {    
+            .info_n {
               .date_info {
-                span {
-                  margin: 0%;
-                }
                 h3 {
                   padding: 0%;
                   margin-top: 1rem;
@@ -203,25 +186,7 @@
             }
           }
           .content_info-project-d {
-            height: 350px;
-          }
-        }
-      }
-    }
-  }
-}
-
-@include m.desktopXl {
-  .content_all-projects {
-    .content_info {
-      a {
-        .proyecto {
-          .content_info-project-n {
-            .info_left {
-              .video_whatssive-n {
-                width: 300px;
-              }
-            }
+            height: 320px;
           }
         }
       }

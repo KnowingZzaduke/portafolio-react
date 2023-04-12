@@ -49,24 +49,8 @@ export function AllProjects() {
                 state.portafolio ? "content_info-project-d" : ""
               }`}
             >
-              <div className="info_left">
-                <video
-                  src={JoseLogo}
-                  autoPlay
-                  loop
-                  muted
-                  className={`video_whatssive-n ${
-                    state.portafolio ? "video_whatssive-d" : ""
-                  }`}
-                />
-              </div>
-              <div
-                className={`info_right-n ${
-                  state.portafolio ? "info_right-d" : ""
-                }`}
-              >
+              <div className={`info_n ${state.portafolio ? "info_d" : ""}`}>
                 <div className="date_info">
-                  <span>Marzo 22, 2023</span>
                   <h3>Portafolio</h3>
                 </div>
                 <div className="info">
@@ -74,9 +58,13 @@ export function AllProjects() {
                     <h4>Stack</h4>
                     <p>React, Sass</p>
                   </div>
-                  <div className="platform">
+                  <div className="plataform">
                     <h4>Plataforma</h4>
                     <p>Web</p>
+                  </div>
+                  <div className="observations">
+                    <h4>Observaciones</h4>
+                    <p>Ninguna</p>
                   </div>
                 </div>
               </div>
@@ -119,32 +107,20 @@ export function AllProjects() {
                 state.dysam ? "content_info-project-d" : ""
               }`}
             >
-              <div className="info_left">
-                <img
-                  src={Dysam}
-                  className={`video_whatssive-n ${
-                    state.dysam ? "video_whatssive-d" : ""
-                  }`}
-                  style={{ height: "300px" }}
-                />
-              </div>
-              <div
-                className={`info_right-n ${state.dysam ? "info_right-d" : ""}`}
-              >
+              <div className={`info_n ${state.dysam ? "info_d" : ""}`}>
                 <div className="date_info">
-                  <span>Marzo 22, 2023</span>
-                  <h3>Reportes Dysam</h3>
+                  <h3>Dysam</h3>
                 </div>
                 <div className="info">
                   <div className="stack">
                     <h4>Stack</h4>
-                    <p>React, Sass</p>
+                    <p>React, Sass, Php, SQL</p>
                   </div>
-                  <div className="platform">
+                  <div className="plataform">
                     <h4>Plataforma</h4>
                     <p>Web</p>
                   </div>
-                  <div>
+                  <div className="observations">
                     <h4>Observaciones</h4>
                     <p>En desarrollo</p>
                   </div>
@@ -186,36 +162,20 @@ export function AllProjects() {
                 state.whatssive ? "content_info-project-d" : ""
               }`}
             >
-              <div className="info_left">
-                <video
-                  src={Whatssive}
-                  autoPlay
-                  loop
-                  muted
-                  className={`video_whatssive-n ${
-                    state.whatssive ? "video_whatssive-d" : ""
-                  }`}
-                />
-              </div>
-              <div
-                className={`info_right-n ${
-                  state.whatssive ? "info_right-d" : ""
-                }`}
-              >
+              <div className={`info_n ${state.whatssive ? "info_d" : ""}`}>
                 <div className="date_info">
-                  <span>Marzo 3, 2023</span>
                   <h3>Whatssive</h3>
                 </div>
                 <div className="info">
                   <div className="stack">
                     <h4>Stack</h4>
-                    <p>React, Sass</p>
+                    <p>React, Sass, NodeJS, Php, SQL</p>
                   </div>
-                  <div className="platform">
+                  <div className="plataform">
                     <h4>Plataforma</h4>
                     <p>Web</p>
                   </div>
-                  <div className="website">
+                  <div className="observations">
                     <h4>Observaciones</h4>
                     <p>En desarrollo</p>
                   </div>
@@ -244,11 +204,11 @@ export function AllProjects() {
         <Link onClick={() => handleToggle("taks")}>
           <div className="proyecto">
             <span>Febrero 26, 2023</span>
-            <h3>Taks list</h3>
+            <h3>Task list</h3>
             <p>
               Un pequeño proyecto en donde pongo en practica algunos de los
-              conocimientos básicos de react, permitiendo agregar, editar y eliminar
-              tareas en una lista.
+              conocimientos básicos de react, permitiendo agregar, editar y
+              eliminar tareas en una lista.
             </p>
             <p className={`detalles ${state.taks ? "detalles_n" : " "}`}>
               <i>Da click para ver más detalles</i>
@@ -258,32 +218,22 @@ export function AllProjects() {
                 state.taks ? "content_info-project-d" : ""
               }`}
             >
-              <div className="info_left">
-                <video
-                  src={Taks}
-                  autoPlay
-                  loop
-                  muted
-                  className={`video_whatssive-n ${
-                    state.taks ? "video_whatssive-d" : ""
-                  }`}
-                />
-              </div>
-              <div
-                className={`info_right-n ${state.taks ? "info_right-d" : ""}`}
-              >
+              <div className={`info_n ${state.taks ? "info_d" : ""}`}>
                 <div className="date_info">
-                  <span>Febrero 26, 2023</span>
-                  <h3>Taks List</h3>
+                  <h3>Task list</h3>
                 </div>
                 <div className="info">
                   <div className="stack">
                     <h4>Stack</h4>
                     <p>React, Sass</p>
                   </div>
-                  <div className="platform">
+                  <div className="plataform">
                     <h4>Plataforma</h4>
                     <p>Web</p>
+                  </div>
+                  <div className="observations">
+                    <h4>Observaciones</h4>
+                    <p>Ninguna</p>
                   </div>
                 </div>
               </div>
@@ -324,34 +274,22 @@ export function AllProjects() {
                 state.carrito ? "content_info-project-d" : ""
               }`}
             >
-              <div className="info_left">
-                <video
-                  src={Carrito}
-                  autoPlay
-                  loop
-                  muted
-                  className={`video_whatssive-n ${
-                    state.carrito ? "video_whatssive-d" : ""
-                  }`}
-                />
-              </div>
-              <div
-                className={`info_right-n ${
-                  state.carrito ? "info_right-d" : ""
-                }`}
-              >
+              <div className={`info_n ${state.carrito ? "info_d" : ""}`}>
                 <div className="date_info">
-                  <span>Febrero 16, 2023</span>
                   <h3>Carrito de compras</h3>
                 </div>
                 <div className="info">
                   <div className="stack">
                     <h4>Stack</h4>
-                    <p>Html, Sass y JavaScript</p>
+                    <p>HTML, Sass, JavaScript</p>
                   </div>
-                  <div className="platform">
+                  <div className="plataform">
                     <h4>Plataforma</h4>
                     <p>Web</p>
+                  </div>
+                  <div className="observations">
+                    <h4>Observaciones</h4>
+                    <p>Ninguna</p>
                   </div>
                 </div>
               </div>
@@ -391,32 +329,22 @@ export function AllProjects() {
                 state.reloj ? "content_info-project-d" : ""
               }`}
             >
-              <div className="info_left">
-                <video
-                  src={Reloj}
-                  autoPlay
-                  loop
-                  muted
-                  className={`video_whatssive-n ${
-                    state.reloj ? "video_whatssive-d" : ""
-                  }`}
-                />
-              </div>
-              <div
-                className={`info_right-n ${state.reloj ? "info_right-d" : ""}`}
-              >
+              <div className={`info_n ${state.reloj ? "info_d" : ""}`}>
                 <div className="date_info">
-                  <span>Enero 13, 2023</span>
                   <h3>Reloj</h3>
                 </div>
                 <div className="info">
                   <div className="stack">
                     <h4>Stack</h4>
-                    <p>Html, Sass y JavaScript</p>
+                    <p>HTML, Sass, JavaScript</p>
                   </div>
-                  <div className="platform">
+                  <div className="plataform">
                     <h4>Plataforma</h4>
                     <p>Web</p>
+                  </div>
+                  <div className="observations">
+                    <h4>Observaciones</h4>
+                    <p>Ninguna</p>
                   </div>
                 </div>
               </div>
@@ -456,34 +384,22 @@ export function AllProjects() {
                 state.calculadora ? "content_info-project-d" : ""
               }`}
             >
-              <div className="info_left">
-                <video
-                  src={Calculadora}
-                  autoPlay
-                  loop
-                  muted
-                  className={`video_whatssive-n ${
-                    state.calculadora ? "video_whatssive-d" : ""
-                  }`}
-                />
-              </div>
-              <div
-                className={`info_right-n ${
-                  state.calculadora ? "info_right-d" : ""
-                }`}
-              >
+              <div className={`info_n ${state.calculadora ? "info_d" : ""}`}>
                 <div className="date_info">
-                  <span>Enero 16, 2023</span>
                   <h3>Calculadora</h3>
                 </div>
                 <div className="info">
                   <div className="stack">
                     <h4>Stack</h4>
-                    <p>Html, Sass y JavaScript</p>
+                    <p>HTML, Sass, JavaScript</p>
                   </div>
-                  <div className="platform">
+                  <div className="plataform">
                     <h4>Plataforma</h4>
                     <p>Web</p>
+                  </div>
+                  <div className="observations">
+                    <h4>Observaciones</h4>
+                    <p>Ninguna</p>
                   </div>
                 </div>
               </div>
@@ -526,34 +442,22 @@ export function AllProjects() {
                 state.contador ? "content_info-project-d" : ""
               }`}
             >
-              <div className="info_left">
-                <video
-                  src={Contador}
-                  autoPlay
-                  loop
-                  muted
-                  className={`video_whatssive-n ${
-                    state.contador ? "video_whatssive-d" : ""
-                  }`}
-                />
-              </div>
-              <div
-                className={`info_right-n ${
-                  state.contador ? "info_right-d" : ""
-                }`}
-              >
+              <div className={`info_n ${state.contador ? "info_d" : ""}`}>
                 <div className="date_info">
-                  <span>enero 6, 2023</span>
                   <h3>Contador</h3>
                 </div>
                 <div className="info">
                   <div className="stack">
                     <h4>Stack</h4>
-                    <p>Html, Sass y JavaScript</p>
+                    <p>HTML, Sass, JavaScript</p>
                   </div>
-                  <div className="platform">
+                  <div className="plataform">
                     <h4>Plataforma</h4>
                     <p>Web</p>
+                  </div>
+                  <div className="observations">
+                    <h4>Observaciones</h4>
+                    <p>Ninguna</p>
                   </div>
                 </div>
               </div>
@@ -596,36 +500,22 @@ export function AllProjects() {
                 state.luis ? "content_info-project-d" : ""
               }`}
             >
-              <div className="info_left">
-                <video
-                  src={Luis}
-                  autoPlay
-                  loop
-                  muted
-                  className={`video_whatssive-n ${
-                    state.luis ? "video_whatssive-d" : ""
-                  }`}
-                />
-              </div>
-              <div
-                className={`info_right-n ${state.luis ? "info_right-d" : ""}`}
-              >
+              <div className={`info_n ${state.luis ? "info_d" : ""}`}>
                 <div className="date_info">
-                  <span>Diciembre 10, 2022</span>
                   <h3>Luis Buelvas Coach</h3>
                 </div>
                 <div className="info">
                   <div className="stack">
                     <h4>Stack</h4>
-                    <p>Html, Sass y JavaScript</p>
+                    <p>HTML, Sass, JavaScript</p>
                   </div>
-                  <div className="platform">
+                  <div className="plataform">
                     <h4>Plataforma</h4>
                     <p>Web</p>
                   </div>
-                  <div>
+                  <div className="observations">
                     <h4>Observaciones</h4>
-                    <p>En desarrollo</p>
+                    <p>Actualización</p>
                   </div>
                 </div>
               </div>
