@@ -66,6 +66,9 @@ export function AllProjects() {
         <div className="content_links">
           <h3>Links</h3>
           <div className="links">
+          <Link to="https://tik-tak-toe-tres-lineas.vercel.app/" target="_blank">
+              <FaPaperPlane title="Página web" />
+            </Link>
             <Link
               to="https://github.com/KnowingZzaduke/portafolio-react"
               target="_blank"
@@ -176,15 +179,7 @@ export function AllProjects() {
         <div className="content_links">
           <h3>Links</h3>
           <div className="links">
-            <Link>
-              <FaPaperPlane title="Página web" />
-            </Link>
-            <Link
-              to="https://github.com/KnowingZzaduke/Whatssive-with-react"
-              target="_blank"
-            >
-              <FaGithub title="Repositorio" />
-            </Link>
+
           </div>
         </div>
       </div>
@@ -519,12 +514,6 @@ export function AllProjects() {
               target="_blank"
             >
               <FaPaperPlane title="Página web" />
-            </Link>
-            <Link
-              to="https://github.com/KnowingZzaduke/Luis-Gabriel"
-              target="_blank"
-            >
-              <FaGithub title="Repositorio" />
             </Link>
           </div>
         </div>
