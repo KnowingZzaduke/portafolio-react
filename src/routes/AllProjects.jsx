@@ -1,15 +1,5 @@
 import { Link } from "react-router-dom";
-import JoseLogo from "/video/jose-logo-black.mp4";
-import Whatssive from "/video/Whatssive.mp4";
-import Taks from "/video/taks.mp4";
-import Carrito from "/video/carrito.mp4";
-import Reloj from "/video/reloj.mp4";
-import Calculadora from "/video/calculadora-JS.mp4";
-import Contador from "/video/contador-JS.mp4";
-import Luis from "/video/Lb.mp4";
 import { FaPaperPlane, FaGithub } from "react-icons/fa";
-
-import Dysam from "/img/Dysam.jpg";
 import { useState } from "react";
 export function AllProjects() {
   const [state, setState] = useState({
