@@ -20,7 +20,7 @@ export function Header() {
       <div className="content_description">
         <h1 className="info" ref={name}></h1>
         <p>
-          Soy un desarrollador front-end junior autodidacta. Manejo tecnologías
+          Soy un desarrollador front-end junior autodidacta y manejo tecnologías
           como <b>HTML</b>, <b>CSS</b>, <b>SASS</b>, <b>JAVASCRIPT</b>,{" "}
           <b>REACT</b>, <b>GIT</b>, <b>GITHUB</b> y la herramienta de diseño{" "}
           <b>FIGMA</b>. Sigo en constante aprendizaje con el objetivo de mostrar
