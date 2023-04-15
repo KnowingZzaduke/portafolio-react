@@ -13,7 +13,7 @@ import Dysam from "/img/Dysam.jpg";
 import { useState } from "react";
 export function AllProjects() {
   const [state, setState] = useState({
-    portafolio: false,
+    tic: false,
     dysam: false,
     whatssive: false,
     taks: false,
@@ -32,24 +32,26 @@ export function AllProjects() {
     <div className="content_all-projects">
       <h2>Proyectos</h2>
       <div className="content_info">
-        <Link onClick={() => handleToggle("portafolio")}>
+        <Link onClick={() => handleToggle("tic")}>
           <div className="proyecto">
             <span>Marzo 30, 2023</span>
-            <h3>Portafolio</h3>
+            <h3>Tik Tac Toe</h3>
             <p>
-              Página web personal enfocada a mostrar los proyectos desarrollados
-              por mi persona con el objetivo de dar a canocer mis conocimientos
-              y habilidades como desarrollador front-end.
+              Tik tac toe o tres líneas, es el famoso juego en la que hay una
+              matríz de 3 x 3 en donde los jugadores deberán colocar "X" y "O"
+              en las diferentes posiciones del tablero, hasta que uno de los
+              jugadores acerte con una de las muchas combinaciones ganadoras,
+              convirtiendose este en el ganador del juego.
             </p>
-            <p className={`detalles ${state.portafolio ? "detalles_n" : " "}`}>
+            <p className={`detalles ${state.tic ? "detalles_n" : " "}`}>
               <i>Da click para ver más detalles</i>
             </p>
             <div
               className={`content_info-project-n ${
-                state.portafolio ? "content_info-project-d" : ""
+                state.tic ? "content_info-project-d" : ""
               }`}
             >
-              <div className={`info_n ${state.portafolio ? "info_d" : ""}`}>
+              <div className={`info_n ${state.tic ? "info_d" : ""}`}>
                 <div className="date_info">
                   <h3>Portafolio</h3>
                 </div>
@@ -74,9 +76,6 @@ export function AllProjects() {
         <div className="content_links">
           <h3>Links</h3>
           <div className="links">
-            <Link>
-              <FaPaperPlane title="Página web" />
-            </Link>
             <Link
               to="https://github.com/KnowingZzaduke/portafolio-react"
               target="_blank"

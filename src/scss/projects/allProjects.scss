@@ -60,7 +60,9 @@
             margin-top: 1rem;
             width: 100%;
 
-            h3, h4, p{
+            h3,
+            h4,
+            p {
               padding: 1rem 0;
             }
             .date_info {
@@ -69,7 +71,7 @@
                 width: 90%;
                 margin: 0% auto;
                 border-radius: 5px 5px 0 0;
-              }              
+              }
             }
             .info {
               .stack {
@@ -100,15 +102,16 @@
                   margin: 0% auto;
                 }
               }
-              .observations{
-                h4, p{
+              .observations {
+                h4,
+                p {
                   width: 90%;
                   margin: 0% auto;
                 }
-                h4{
+                h4 {
                   background-color: v.$amarillo;
                 }
-                p{
+                p {
                   background-color: v.$amarilloClaro;
                 }
               }
@@ -163,7 +166,7 @@
     .content_info {
       a {
         .proyecto {
-          .content_info-project-n {    
+          .content_info-project-n {
             .info_n {
               .date_info {
                 h3 {

@@ -8,14 +8,16 @@ export function Projects() {
       <div className="projects">
         <div className="project">
           <div className="date_project">
-            <p>Marzo 30, 2023</p>
+            <p>Abril 15, 2023</p>
           </div>
           <div className="project_description">
-            <h3>Portafolio</h3>
+            <h3>Tik Tac Toe</h3>
             <p>
-              Página web personal enfocada a mostrar los proyectos desarrollados
-              por mi persona con el objetivo de dar a canocer mis conocimientos
-              y habilidades como desarrollador front-end.
+              Tik tac toe o tres líneas, es el famoso juego en la que hay una
+              matríz de 3 x 3 en donde los jugadores deberán colocar "X" y "O"
+              en las diferentes posiciones del tablero, hasta que uno de los
+              jugadores acerte con una de las muchas combinaciones ganadoras,
+              convirtiendose este en el ganador del juego.
             </p>
           </div>
         </div>
@@ -42,7 +44,7 @@ export function Projects() {
             <h3>Taks list</h3>
             <p>
               Un pequeño proyecto en donde pongo en practica algunos de los
-              conocimientos básicos de react, permitiendo agregar y eliminar
+              conocimientos básicos de react, permitiendo agregar, editar y eliminar
               tareas en una lista.
             </p>
           </div>
