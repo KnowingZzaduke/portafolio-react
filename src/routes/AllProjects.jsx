@@ -66,7 +66,10 @@ export function AllProjects() {
         <div className="content_links">
           <h3>Links</h3>
           <div className="links">
-          <Link to="https://tik-tak-toe-tres-lineas.vercel.app/" target="_blank">
+            <Link
+              to="https://tik-tak-toe-tres-lineas.vercel.app/"
+              target="_blank"
+            >
               <FaPaperPlane title="Página web" />
             </Link>
             <Link
@@ -143,8 +146,8 @@ export function AllProjects() {
             <span>Marzo 3, 2023</span>
             <h3>Whatssive</h3>
             <p>
-              Una API de Whatsapp que permite el envío masivo de mensajes a
-              contactos, grupos o comunidades dentro de WhatsApp.
+              Una API de Whatsapp que permite el envío masivo de mensajes o
+              archivos a contactos y difusiones de WhatsApp.
             </p>
             <p className={`detalles ${state.whatssive ? "detalles_n" : " "}`}>
               <i>Da click para ver más detalles</i>
@@ -161,7 +164,7 @@ export function AllProjects() {
                 <div className="info">
                   <div className="stack">
                     <h4>Stack</h4>
-                    <p>React, Sass, NodeJS, Php, SQL</p>
+                    <p>React, Sass, NodeJS, Php, SQL, Docker</p>
                   </div>
                   <div className="plataform">
                     <h4>Plataforma</h4>
@@ -179,7 +182,9 @@ export function AllProjects() {
         <div className="content_links">
           <h3>Links</h3>
           <div className="links">
-
+            <Link to="https://api.whatsive.com/" target="_blank">
+              <FaPaperPlane title="Página web" />
+            </Link>
           </div>
         </div>
       </div>
