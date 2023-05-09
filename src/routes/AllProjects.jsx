@@ -130,12 +130,6 @@ export function AllProjects() {
             <Link to="https://app.dysam.com.co/" target="_blank">
               <FaPaperPlane title="Página web" />
             </Link>
-            <Link
-              to="https://github.com/KnowingZzaduke/reportes-react"
-              target="_blank"
-            >
-              <FaGithub title="Repositorio" />
-            </Link>
           </div>
         </div>
       </div>
