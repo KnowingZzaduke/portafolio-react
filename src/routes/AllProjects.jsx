@@ -138,10 +138,10 @@ export function AllProjects() {
         <Link onClick={() => handleToggle("whatssive")}>
           <div className="proyecto">
             <span>Marzo 3, 2023</span>
-            <h3>Whatssive</h3>
+            <h3>Whatsive</h3>
             <p>
               Una API de Whatsapp que permite el envío masivo de mensajes o
-              archivos a contactos y difusiones de WhatsApp.
+              archivos a contactos y difusiones a WhatsApp.
             </p>
             <p className={`detalles ${state.whatssive ? "detalles_n" : " "}`}>
               <i>Da click para ver más detalles</i>
@@ -153,7 +153,7 @@ export function AllProjects() {
             >
               <div className={`info_n ${state.whatssive ? "info_d" : ""}`}>
                 <div className="date_info">
-                  <h3>Whatssive</h3>
+                  <h3>Whatsive</h3>
                 </div>
                 <div className="info">
                   <div className="stack">
@@ -498,7 +498,7 @@ export function AllProjects() {
                   </div>
                   <div className="observations">
                     <h4>Observaciones</h4>
-                    <p>Actualización</p>
+                    <p>En desarrollo</p>
                   </div>
                 </div>
               </div>
@@ -509,7 +509,7 @@ export function AllProjects() {
           <h3>Links</h3>
           <div className="links">
             <Link
-              to="https://luis-gabriel-buelvas-conferencista-coach-financiero.vercel.app/"
+              to="https://luis-coach-react.vercel.app/"
               target="_blank"
             >
               <FaPaperPlane title="Página web" />
