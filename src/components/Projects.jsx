@@ -14,8 +14,7 @@ export function Projects() {
             <h3>API Rick and Morty</h3>
             <p>
               Realizando peticiones a la API de Rick y Morty con el objetivo de
-              poner en práctica realizar peticiones usando "axios" y colocando
-              en practica los hooks "useCallback" y "useMemo".
+              poner en práctica el uso de "axios" y los hooks "useCallback" y "useMemo".
             </p>
           </div>
         </div>

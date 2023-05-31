@@ -27,7 +27,9 @@ export function AllProjects() {
             <span>Mayo 30, 2023</span>
             <h3>Rick and Morty API</h3>
             <p>
-              Realizando peticiones a la API de Rick y Morty con el objetivo de poner en práctica realizar peticiones usando "axios" y colocando en practica los hooks "useCallback" y "useMemo".
+              Realizando peticiones a la API de Rick y Morty con el objetivo de
+              poner en práctica el uso de "axios" y los hooks "useCallback" y
+              "useMemo".{" "}
             </p>
             <p className={`detalles ${state.tic ? "detalles_n" : " "}`}>
               <i>Da click para ver más detalles</i>
@@ -564,10 +566,7 @@ export function AllProjects() {
         <div className="content_links">
           <h3>Links</h3>
           <div className="links">
-            <Link
-              to="https://luis-coach-react.vercel.app/"
-              target="_blank"
-            >
+            <Link to="https://luis-coach-react.vercel.app/" target="_blank">
               <FaPaperPlane title="Página web" />
             </Link>
           </div>
