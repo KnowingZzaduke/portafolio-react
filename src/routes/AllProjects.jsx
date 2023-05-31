@@ -24,6 +24,62 @@ export function AllProjects() {
       <div className="content_info">
         <Link onClick={() => handleToggle("tic")}>
           <div className="proyecto">
+            <span>Mayo 30, 2023</span>
+            <h3>Rick and Morty API</h3>
+            <p>
+              Realizando peticiones a la API de Rick y Morty con el objetivo de poner en práctica realizar peticiones usando "axios" y colocando en practica los hooks "useCallback" y "useMemo".
+            </p>
+            <p className={`detalles ${state.tic ? "detalles_n" : " "}`}>
+              <i>Da click para ver más detalles</i>
+            </p>
+            <div
+              className={`content_info-project-n ${
+                state.tic ? "content_info-project-d" : ""
+              }`}
+            >
+              <div className={`info_n ${state.tic ? "info_d" : ""}`}>
+                <div className="date_info">
+                  <h3>Rick and Morty API</h3>
+                </div>
+                <div className="info">
+                  <div className="stack">
+                    <h4>Stack</h4>
+                    <p>React, Css</p>
+                  </div>
+                  <div className="plataform">
+                    <h4>Plataforma</h4>
+                    <p>Web</p>
+                  </div>
+                  <div className="observations">
+                    <h4>Observaciones</h4>
+                    <p>Ninguna</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Link>
+        <div className="content_links">
+          <h3>Links</h3>
+          <div className="links">
+            <Link
+              to="https://rick-and-morty-api-vert.vercel.app/"
+              target="_blank"
+            >
+              <FaPaperPlane title="Página web" />
+            </Link>
+            <Link
+              to="https://github.com/KnowingZzaduke/Rick-and-Morty-Api"
+              target="_blank"
+            >
+              <FaGithub title="Repositorio" />
+            </Link>
+          </div>
+        </div>
+      </div>
+      <div className="content_info">
+        <Link onClick={() => handleToggle("tic")}>
+          <div className="proyecto">
             <span>Marzo 30, 2023</span>
             <h3>Tik Tac Toe</h3>
             <p>
