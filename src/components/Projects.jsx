@@ -8,6 +8,19 @@ export function Projects() {
       <div className="projects">
         <div className="project">
           <div className="date_project">
+            <p>Mayo 30, 2023</p>
+          </div>
+          <div className="project_description">
+            <h3>API Rick and Morty</h3>
+            <p>
+              Realizando peticiones a la API de Rick y Morty con el objetivo de
+              poner en práctica realizar peticiones usando "axios" y colocando
+              en practica los hooks "useCallback" y "useMemo".
+            </p>
+          </div>
+        </div>
+        <div className="project">
+          <div className="date_project">
             <p>Abril 15, 2023</p>
           </div>
           <div className="project_description">
@@ -41,23 +54,10 @@ export function Projects() {
             <p>Marzo 3, 2023</p>
           </div>
           <div className="project_description">
-            <h3>Taks list</h3>
+            <h3>Whatsive</h3>
             <p>
-              Un pequeño proyecto en donde pongo en practica algunos de los
-              conocimientos básicos de react, permitiendo agregar, editar y eliminar
-              tareas en una lista.
-            </p>
-          </div>
-        </div>
-        <div className="project">
-          <div className="date_project">
-            <p>Marzo 3, 2023</p>
-          </div>
-          <div className="project_description">
-            <h3>Whatssive</h3>
-            <p>
-              Una API de Whatsapp que permite el envío masivo de mensajes a
-              contactos, grupos o comunidades dentro de WhatsApp.
+              Una API de Whatsapp que permite el envío masivo de mensajes o
+              archivos a contactos y difusiones a WhatsApp.
             </p>
           </div>
         </div>
